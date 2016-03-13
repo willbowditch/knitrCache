@@ -8,14 +8,14 @@
 #'
 #'   All data is 'lazyLoaded' meaning that R doesn't actually pull the data into memory until you begin working with it.
 #'
-#' @param d A directory containing a knitr cache
+#' @param directory A directory containing a knitr cache
 #'
 #' @return loads entire cache into global enviroment (lazy loading)
 #' @export
 #'
 #' @examples loadKnitrCache('~/directory/containing/cache/')
 
-loadKnitrCache <- function(d){
+loadKnitrCache <- function(directory){
   require(stringr)
 
   names<- dir(d, pattern = '*.rdx', full.names = T)
