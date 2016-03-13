@@ -4,10 +4,10 @@
 \alias{loadKnitrCache}
 \title{loadKnitrCache}
 \usage{
-loadKnitrCache(d)
+loadKnitrCache(directory)
 }
 \arguments{
-\item{d}{A directory containing a knitr cache}
+\item{directory}{A directory containing a knitr cache}
 }
 \value{
 loads entire cache into global enviroment (lazy loading)
@@ -18,7 +18,7 @@ Loads a knitr cache into the current global enviroment
 \details{
 When a knitr script is run with cache enabled all data is saved in a given directory. However, this is not easily loaded into an active R session for easy manipulation when working on scripts.
 
-This function allows you to load this data into the current R session. Simply call loadKnitrCache('directory/containing/cache').
+This function allows you to load this data into the current R session. Simply call loadKnitrCache('directory/containing/cache/').
 
 All data is 'lazyLoaded' meaning that R doesn't actually pull the data into memory until you begin working with it.
 }
