@@ -1,0 +1,14 @@
+Package: knitrCache
+Type: Package
+Title: Load cache create by knitr into the global enviroment
+Version: 0.1
+Date: 2016-03-13
+Author@R: person(given = 'Will', family = 'Bowditch', email = 'will@bowdit.ch')
+Maintainer@R: person(given = 'Will', family = 'Bowditch', email = 'will@bowdit.ch')
+Description: Provides an easy way to load all of the cahced data knitr creates
+    during a knit into the enviroment.
+License: GPL-3
+LazyData: TRUE
+Imports:
+    stringr
+RoxygenNote: 5.0.1
