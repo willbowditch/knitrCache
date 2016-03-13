@@ -18,7 +18,7 @@
 loadKnitrCache <- function(directory){
   require(stringr)
 
-  names<- dir(d, pattern = '*.rdx', full.names = T)
+  names<- dir(directory, pattern = '*.rdx', full.names = T)
   names<- str_replace(names, '.rdx', '')
 
   for(x in 1:length(names)){
@@ -27,6 +27,6 @@ loadKnitrCache <- function(directory){
 
   # Clean up
   rm(names)
-  rm(d)
+  rm(directory)
 }
 
